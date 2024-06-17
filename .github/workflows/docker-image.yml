@@ -14,5 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag argus:latest
+      
+    - name: Check repo 
+      run: docker run argus:latest --mode repo --url https://github.com/SonarSource/sonarqube-scan-action
