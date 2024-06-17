@@ -1,4 +1,4 @@
 Documentation:
 - any:
   - changed-files:
-    - any-glob-to-any-file: 'docs/*'
+    - any-glob-to-any-file: 'docs/**'
